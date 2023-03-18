@@ -10,6 +10,7 @@ public class Main {
         int attack1 = 0;
         int result1;
         int result2;
+
         String fightername1 = "Боец1";
         String fightername2 = "Боец2";
         Scanner reader = new Scanner(System.in);
