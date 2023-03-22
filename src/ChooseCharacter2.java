@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class ChooseCharacter2 {
     Scanner reader = new Scanner(System.in);
     Fighter fighter2;
-    public ChooseCharacter2(){
+
+    public ChooseCharacter2() {
         System.out.print("Игрок2 - выбери цифру бойца: \n 1 - Плод. \n 2 - Саня.\n 3 - Никита.\n ");
         int fght2 = reader.nextInt();
 
@@ -15,7 +16,8 @@ public class ChooseCharacter2 {
             }
         }
     }
+
     public Fighter getFighter2() {
         return fighter2;
     }
-
+}
