@@ -11,32 +11,28 @@ public class ChooseCharacter {
         int fght2 = reader.nextInt();
 
 
-
         switch (fght1) {
-            case 1: fighter1 = new Plod(15, 30, "Плодик");
-                break;
-            case 2: fighter1 =  new Nikita(30, 10, "Никита");
-                break;
-            case 3: fighter1 = new Sanya(20, 20, "Саня");
-                break;
-            default: break;
+            case 1 -> fighter1 = new Plod(15, 30, "Плодик");
+            case 2 -> fighter1 = new Nikita(30, 10, "Никита");
+            case 3 -> fighter1 = new Sanya(20, 20, "Саня");
+            default -> {
+            }
         }
         switch (fght2) {
-            case 1: fighter2 = new Plod(15, 30, "Плодик");
-                break;
-            case 2: fighter2 =  new Nikita(30, 10, "Никита");
-                break;
-            case 3: fighter2 = new Sanya(20, 20, "Саня");
-                break;
-            default: break;
+            case 1 -> fighter2 = new Plod(15, 30, "Плодик");
+            case 2 -> fighter2 = new Nikita(30, 10, "Никита");
+            case 3 -> fighter2 = new Sanya(20, 20, "Саня");
+            default -> {
+            }
         }
+
     }
 
     public Fighter getFighter1() {
-        return fighter1;
+        return this.fighter1;
     }
 
     public Fighter getFighter2() {
-        return fighter2;
+        return this.fighter2;
     }
 }
