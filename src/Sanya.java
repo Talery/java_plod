@@ -1,7 +1,7 @@
-public final class Sanya extends Fighter  {
+public final class Sanya extends Fighter implements Skills {
     public Sanya(int atk, int def, String name) {super(atk, def, name);}
     @Override
-    public void specialattack(){
+    public void special(){
         System.out.println(name + " начинает флексить");
     }
 }

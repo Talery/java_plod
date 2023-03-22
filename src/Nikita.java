@@ -1,7 +1,7 @@
-public final class Nikita extends Fighter  {
+public final class Nikita extends Fighter implements Skills {
     public Nikita(int atk, int def, String name) {super(atk, def, name);}
     @Override
-    public void specialattack() {
+    public void special() {
         System.out.println(name + " угрожающе потирает бороду");
     }
 }
