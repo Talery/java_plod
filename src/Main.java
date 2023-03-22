@@ -9,8 +9,8 @@ public class Main {
         System.out.print("Игрок2 - выбери цифру бойца: \n 1 - Плод. \n 2 - Саня.\n 3 - Никита.\n");
         int fght2 = reader.nextInt();
 
-        Fighter fighter1 = null;
-        Fighter fighter2 = null;
+        Fighter fighter1;
+        Fighter fighter2;
 
         switch (fght1) {
             case 1: fighter1 = new Plod(15, 30, "Плодик");
@@ -19,9 +19,8 @@ public class Main {
                 break;
             case 3: fighter1 = new Sanya(20, 20, "Саня");
                 break;
-            default: break;
+            default: return;
         }
-        System.out.println("Выбран " + fighter1.name);
         switch (fght2) {
             case 1: fighter2 = new Plod(15, 30, "Плодик");
                 break;
@@ -29,10 +28,10 @@ public class Main {
                 break;
             case 3: fighter2 = new Sanya(20, 20, "Саня");
                 break;
-            default:break;
+            default: return;
         }
-        System.out.println("Выбран " + fighter2.name);
 
+        System.out.println("В сражении бойцов " + fighter1.name + " и " + fighter2.name + ": ");
         if (fighter1.atk - fighter2.def + fighter2.atk - fighter1.def > 0) {
             System.out.println(fighter1.name + " победил!");
         }
