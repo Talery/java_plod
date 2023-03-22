@@ -3,8 +3,7 @@ abstract public class Fighter {
     int atk;
     int def;
 
-    abstract void attack();
-
+    abstract void specialattack();
     public Fighter(int atk, int def, String name) {
         this.atk = atk;
         this.def = def;

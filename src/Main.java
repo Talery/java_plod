@@ -31,7 +31,8 @@ public class Main {
             default: return;
         }
 
-        System.out.println("В сражении бойцов " + fighter1.name + " и " + fighter2.name + ": ");
+
+        System.out.println("Начался бой: " + fighter1.name + " и " + fighter2.name + ": ");
         if (fighter1.atk - fighter2.def + fighter2.atk - fighter1.def > 0) {
             System.out.println(fighter1.name + " победил!");
         }
