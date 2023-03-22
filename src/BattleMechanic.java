@@ -1,9 +1,9 @@
 public class BattleMechanic {
     void battle() {
-        ChooseCharacter1 chooseCharacter1 = new ChooseCharacter1();
-        ChooseCharacter2 chooseCharacter2 = new ChooseCharacter2();
-        Fighter fighter1 = chooseCharacter1.getFighter1();
-        Fighter fighter2 = chooseCharacter2.getFighter2();
+        ChooseCharacter1 ChooseCharacter1 = new ChooseCharacter1();
+        ChooseCharacter2 ChooseCharacter2 = new ChooseCharacter2();
+        Fighter fighter1 = ChooseCharacter1.getFighter1();
+        Fighter fighter2 = ChooseCharacter2.getFighter2();
         System.out.println("Начался бой: " + fighter1.name + " и " + fighter2.name + ": ");
         UseSkill useSkill = new UseSkill();
         useSkill.useYourSkill((Skills) fighter1);
