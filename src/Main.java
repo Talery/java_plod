@@ -5,4 +5,5 @@ public class Main {
         BattleMechanic battleMechanic = new BattleMechanic();
         battleMechanic.battle();
     }
+
 }
