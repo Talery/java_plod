@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class ChooseCharacter {
-    Scanner reader = new Scanner(System.in);
     Fighter fighter1;
     Fighter fighter2;
     public ChooseCharacter() {
+        Scanner reader = new Scanner(System.in);
         System.out.print("Игрок1 - выбери цифру бойца: \n 1 - Плод. \n 2 - Саня.\n 3 - Никита.\n ");
         int fght1 = reader.nextInt();
         switch (fght1) {
